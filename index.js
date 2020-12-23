@@ -2,7 +2,9 @@ const shirt = document.querySelectorAll(".footbalShirt");
 const allShirts = document.querySelectorAll(".footbalTshirt");
 // Make the DIV element draggable:
 
-allShirts.forEach((el) => dragElement(el));
+allShirts.forEach((el) => {
+  dragElement(el);
+});
 
 dragElement(document.querySelector(".footbalShirt"));
 
@@ -54,26 +56,38 @@ function dragElement(elmnt) {
 
 //selecting the select
 
-const selectHtml = document.querySelector(".selectingLineUp");
-const submitButton = document.querySelector(".submitButton");
-console.log(submitButton);
+const selectHtml = document.querySelector(".footballInside--selectingLineUp");
 //shhirts shirt
-submitButton.addEventListener("click", function (e) {
-  shirt.forEach((el) => {
-    console.log(el.dataset.number);
+selectHtml.addEventListener("change", function (e) {
+  allShirts.forEach((el) => {
     console.log();
     switch (selectHtml.value) {
       case "4-4-2":
         el.style.top = null;
         el.style.left = null;
+        el.classList.remove(`footballShirt-3-5-2-${el.dataset.number}`);
+
         el.classList.remove(`footballShirt-4-3-3-${el.dataset.number}`);
         el.classList.add(`footballShirt-4-4-2-${el.dataset.number}`);
+        console.log(el.classList.value);
         break;
       case "4-3-3":
         el.style.top = null;
         el.style.left = null;
-        el.classList.remove(`footballShirt-4-2-2-${el.dataset.number}`);
+        el.classList.remove(`footballShirt-3-5-2-${el.dataset.number}`);
+
+        el.classList.remove(`footballShirt-4-4-2-${el.dataset.number}`);
         el.classList.add(`footballShirt-4-3-3-${el.dataset.number}`);
+
+        break;
+      case "3-5-2":
+        el.style.top = null;
+        el.style.left = null;
+        el.classList.remove(`footballShirt-4-3-3-${el.dataset.number}`);
+
+        el.classList.remove(`footballShirt-4-4-2-${el.dataset.number}`);
+        el.classList.add(`footballShirt-3-5-2-${el.dataset.number}`);
+        break;
       default:
         break;
     }
