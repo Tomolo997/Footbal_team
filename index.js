@@ -105,3 +105,34 @@ selectHtml.addEventListener("change", function (e) {
     }
   });
 });
+
+//add the players
+const numbersOnTheBar = document.querySelectorAll(".numberOnShirt-input");
+
+const numberOnTheShirt = document.querySelectorAll(".footbalNumber");
+numberOnTheShirt.forEach((el) => {
+  el.textContent = el.parentElement.parentElement.dataset.number;
+});
+//get spans
+
+numbersOnTheBar.forEach((el) => {
+  el.placeholder = numberOnTheShirt[el.dataset.number - 2].textContent;
+});
+numbersOnTheBar.forEach((el) => {
+  console.log(el.dataset.number);
+  el.addEventListener("keyup", function (e) {
+    numberOnTheShirt[el.dataset.number - 2].textContent = el.value;
+    console.log(numberOnTheShirt[el.dataset.number - 2]);
+  });
+});
+
+//surnames on the shirt on the field
+const surname = document.querySelectorAll(".footballName");
+
+const surnameShirtBar = document.querySelectorAll(".surnameOnShirt-input");
+
+surnameShirtBar.forEach((el) => {
+  el.addEventListener("keyup", function (e) {
+    surname[el.dataset.number - 2].textContent = el.value;
+  });
+});
