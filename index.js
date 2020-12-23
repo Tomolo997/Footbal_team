@@ -65,6 +65,7 @@ selectHtml.addEventListener("change", function (e) {
       case "4-4-2":
         el.style.top = null;
         el.style.left = null;
+        el.classList.remove(`footballShirt-4-2-4-${el.dataset.number}`);
         el.classList.remove(`footballShirt-3-5-2-${el.dataset.number}`);
 
         el.classList.remove(`footballShirt-4-3-3-${el.dataset.number}`);
@@ -75,6 +76,7 @@ selectHtml.addEventListener("change", function (e) {
         el.style.top = null;
         el.style.left = null;
         el.classList.remove(`footballShirt-3-5-2-${el.dataset.number}`);
+        el.classList.remove(`footballShirt-4-2-4-${el.dataset.number}`);
 
         el.classList.remove(`footballShirt-4-4-2-${el.dataset.number}`);
         el.classList.add(`footballShirt-4-3-3-${el.dataset.number}`);
@@ -84,9 +86,19 @@ selectHtml.addEventListener("change", function (e) {
         el.style.top = null;
         el.style.left = null;
         el.classList.remove(`footballShirt-4-3-3-${el.dataset.number}`);
+        el.classList.remove(`footballShirt-4-2-4-${el.dataset.number}`);
 
         el.classList.remove(`footballShirt-4-4-2-${el.dataset.number}`);
         el.classList.add(`footballShirt-3-5-2-${el.dataset.number}`);
+        break;
+      case "4-2-4":
+        el.style.top = null;
+        el.style.left = null;
+        el.classList.remove(`footballShirt-4-3-3-${el.dataset.number}`);
+
+        el.classList.remove(`footballShirt-4-4-2-${el.dataset.number}`);
+        el.classList.remove(`footballShirt-3-5-2-${el.dataset.number}`);
+        el.classList.add(`footballShirt-4-2-4-${el.dataset.number}`);
         break;
       default:
         break;

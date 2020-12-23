@@ -243,6 +243,61 @@ THe 4-3-3 position
   top: 10%;
   left: 70%;
 }
+
+/*4-2-4*/
+
+.footballShirt-4-2-4-2 {
+  position: absolute;
+  top: 57%;
+  left: 22%;
+}
+
+.footballShirt-4-2-4-3 {
+  position: absolute;
+  top: 35%;
+  left: 22%;
+}
+
+.footballShirt-4-2-4-4 {
+  position: absolute;
+  top: 75%;
+  left: 30%;
+}
+.footballShirt-4-2-4-5 {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+.footballShirt-4-2-4-6 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+}
+.footballShirt-4-2-4-7 {
+  position: absolute;
+  top: 75%;
+  left: 80%;
+}
+.footballShirt-4-2-4-8 {
+  position: absolute;
+  top: 27%;
+  left: 50%;
+}
+.footballShirt-4-2-4-9 {
+  position: absolute;
+  top: 55%;
+  left: 85%;
+}
+.footballShirt-4-2-4-10 {
+  position: absolute;
+  top: 30%;
+  left: 85%;
+}
+.footballShirt-4-2-4-11 {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+}
 /*
 Football stuff outside field
 */
@@ -290,4 +345,39 @@ Football stuff outside field
 
 .footballInside--selectingLineUp:focus {
   outline: none;
+}
+
+.footballNamesDiv {
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputPlayer {
+  display: flex;
+}
+
+.numberOnShirt-span {
+  font-size: 2rem;
+}
+.surnameOnShirt-span {
+  font-size: 2rem;
+}
+
+.numberOnShirt {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+.surnameOnShirt {
+  display: flex;
+  flex-direction: column;
+}
+.numberOnShirt-input {
+  width: 50px;
+  height: 40px;
+  padding-left: 0.8rem;
+  font-size: 2rem;
+  margin-left: 2rem;
 }
