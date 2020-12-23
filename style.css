@@ -19,8 +19,8 @@ body {
 .field {
   height: 700px;
   width: 831px;
-  top: 40%;
-  left: 30%;
+  top: 50%;
+  left: 45%;
   position: absolute;
   transform: translate(-50%, -50%);
 }
@@ -28,15 +28,19 @@ body {
   height: 700px;
   width: 1000px;
 }
+.footbalTshirt {
+  position: absolute;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .footbalShirt {
   height: 80px;
   cursor: grab;
   width: 100px;
-  top: 50%;
-  left: 30%;
-  position: absolute;
-  transform: translate(-50%, -50%);
+
   background-color: blue;
   z-index: 12;
   clip-path: polygon(
@@ -66,55 +70,55 @@ body {
 
 .footballShirt-4-4-2-2 {
   position: absolute;
-  top: 47%;
+  top: 57%;
   left: 22%;
 }
 
 .footballShirt-4-4-2-3 {
   position: absolute;
-  top: 32%;
+  top: 35%;
   left: 22%;
 }
 
 .footballShirt-4-4-2-4 {
   position: absolute;
-  top: 59%;
-  left: 24%;
+  top: 75%;
+  left: 30%;
 }
 .footballShirt-4-4-2-5 {
   position: absolute;
-  top: 20%;
-  left: 24%;
+  top: 10%;
+  left: 30%;
 }
 .footballShirt-4-4-2-6 {
   position: absolute;
-  top: 47%;
-  left: 32%;
+  top: 55%;
+  left: 50%;
 }
 .footballShirt-4-4-2-7 {
   position: absolute;
-  top: 32%;
-  left: 32%;
+  top: 35%;
+  left: 50%;
 }
 .footballShirt-4-4-2-8 {
   position: absolute;
-  top: 20%;
-  left: 36%;
+  top: 15%;
+  left: 70%;
 }
 .footballShirt-4-4-2-9 {
   position: absolute;
-  top: 59%;
-  left: 36%;
+  top: 70%;
+  left: 70%;
 }
 .footballShirt-4-4-2-10 {
   position: absolute;
-  top: 32%;
-  left: 45%;
+  top: 38%;
+  left: 90%;
 }
 .footballShirt-4-4-2-11 {
   position: absolute;
-  top: 45%;
-  left: 45%;
+  top: 57%;
+  left: 90%;
 }
 /* 
 
@@ -125,55 +129,55 @@ THe 4-3-3 position
 
 .footballShirt-4-3-3-2 {
   position: absolute;
-  top: 47%;
+  top: 57%;
   left: 22%;
 }
 
 .footballShirt-4-3-3-3 {
   position: absolute;
-  top: 32%;
+  top: 35%;
   left: 22%;
 }
 
 .footballShirt-4-3-3-4 {
   position: absolute;
-  top: 59%;
-  left: 24%;
+  top: 75%;
+  left: 30%;
 }
 .footballShirt-4-3-3-5 {
   position: absolute;
-  top: 20%;
-  left: 24%;
+  top: 10%;
+  left: 30%;
 }
 .footballShirt-4-3-3-6 {
   position: absolute;
-  top: 48%;
-  left: 36%;
+  top: 42%;
+  left: 50%;
 }
 .footballShirt-4-3-3-7 {
   position: absolute;
-  top: 40%;
-  left: 32%;
+  top: 60%;
+  left: 65%;
 }
 .footballShirt-4-3-3-8 {
   position: absolute;
   top: 30%;
-  left: 36%;
+  left: 65%;
 }
 .footballShirt-4-3-3-9 {
   position: absolute;
-  top: 55%;
-  left: 45%;
+  top: 65%;
+  left: 90%;
 }
 .footballShirt-4-3-3-10 {
   position: absolute;
-  top: 25%;
-  left: 45%;
+  top: 20%;
+  left: 90%;
 }
 .footballShirt-4-3-3-11 {
   position: absolute;
-  top: 40%;
-  left: 45%;
+  top: 43%;
+  left: 90%;
 }
 
 .footbalPosition {
@@ -183,4 +187,18 @@ THe 4-3-3 position
   left: 8%;
   width: 100px;
   background-color: blue;
+}
+
+.footballName {
+  background-color: black;
+
+  top: 45px;
+  left: -7px;
+  color: aliceblue;
+  font-size: 16px;
+}
+.footballNamesDiv {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
 }
