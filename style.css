@@ -44,17 +44,17 @@ body {
   background-color: blue;
   z-index: 12;
   clip-path: polygon(
-    0 44%,
-    21% 8%,
-    46% 9%,
-    75% 7%,
-    100% 47%,
-    88% 54%,
-    69% 26%,
-    70% 100%,
-    25% 100%,
-    26% 25%,
-    8% 57%
+    0 46%,
+    23% 13%,
+    50% 13%,
+    77% 13%,
+    100% 46%,
+    88% 56%,
+    74% 39%,
+    74% 100%,
+    26% 100%,
+    26% 39%,
+    11% 56%
   );
 }
 
@@ -64,7 +64,7 @@ body {
   z-index: 100;
   position: absolute;
   top: 40%;
-  left: 45%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -306,9 +306,9 @@ Football stuff outside field
   position: absolute;
   left: 70%;
   top: 1.3%;
-  height: 750px;
+  height: 720px;
   width: 400px;
-  background-color: aqua;
+  background-color: rgb(236, 233, 233);
   display: flex;
   flex-direction: column;
 }
@@ -316,7 +316,7 @@ Football stuff outside field
 .footbalPosition {
   height: 80px;
   width: 100%;
-  background-color: orange;
+  background-color: rgb(236, 233, 233);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,7 +349,6 @@ Football stuff outside field
 
 .footballNamesDiv {
   height: 100%;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
 }
@@ -359,7 +358,10 @@ Football stuff outside field
 }
 
 .numberOnShirt-span {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 100;
+  position: relative;
+  left: 15%;
 }
 .surnameOnShirt-span {
   font-size: 2rem;
@@ -367,8 +369,8 @@ Football stuff outside field
 
 .numberOnShirt {
   display: flex;
-  flex-direction: column;
-  margin-right: 2rem;
+  margin-top: 2.3rem;
+  margin-right: 1rem;
 }
 .surnameOnShirt {
   display: flex;
@@ -387,4 +389,52 @@ Football stuff outside field
   height: 40px;
   font-size: 2rem;
   padding-left: 1rem;
+}
+
+.styles {
+  position: absolute;
+  top: 2%;
+  height: 200px;
+  width: 200px;
+
+  left: 19.2%;
+}
+
+.style_div {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  border-radius: 20px;
+  background: linear-gradient(#e66465, #b82525);
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.colorSquare {
+  position: relative;
+  top: 1.6rem;
+  left: 2.5rem;
+  height: 20px;
+  width: 20px;
+}
+.pickColor {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 1rem;
+  left: 7rem;
+}
+
+.colorPicker {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+::-webkit-color-swatch-wrapper {
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+::-webkit-color-swatch {
+  border-radius: 50%;
 }

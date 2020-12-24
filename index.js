@@ -121,6 +121,7 @@ numbersOnTheBar.forEach((el) => {
 numbersOnTheBar.forEach((el) => {
   console.log(el.dataset.number);
   el.addEventListener("keyup", function (e) {
+    e.preventDefault();
     numberOnTheShirt[el.dataset.number - 2].textContent = el.value;
     console.log(numberOnTheShirt[el.dataset.number - 2]);
   });
@@ -135,4 +136,15 @@ surnameShirtBar.forEach((el) => {
   el.addEventListener("keyup", function (e) {
     surname[el.dataset.number - 2].textContent = el.value;
   });
+});
+
+//color picker
+const styleDiv = document.querySelector(".style_div");
+const colorShow = document.querySelector(".colorHidden");
+
+const shirtColor = document.querySelector(".colorPicker");
+
+shirtColor.addEventListener("input", function (e) {
+  console.log(shirtColor.value);
+  shirt.forEach((el) => (el.style.backgroundColor = shirtColor.value));
 });
