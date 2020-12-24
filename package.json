@@ -1,0 +1,22 @@
+{
+  "name": "03_footballteams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomolo997/Footbal_team.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomolo997/Footbal_team/issues"
+  },
+  "homepage": "https://github.com/Tomolo997/Footbal_team#readme",
+  "dependencies": {
+    "puppeteer": "^5.5.0"
+  }
+}
