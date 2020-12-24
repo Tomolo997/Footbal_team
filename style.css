@@ -24,7 +24,7 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
 }
-.field img {
+.field__img {
   height: 700px;
   width: 1000px;
 }
@@ -308,7 +308,9 @@ Football stuff outside field
   top: 1.3%;
   height: 720px;
   width: 400px;
-  background-color: rgb(236, 233, 233);
+  background-color: rgb(238, 121, 121);
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -316,10 +318,11 @@ Football stuff outside field
 .footbalPosition {
   height: 80px;
   width: 100%;
-  background-color: rgb(236, 233, 233);
+  background-color: rgb(238, 121, 121);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
 }
 
 .footballInside {
@@ -340,6 +343,7 @@ Football stuff outside field
   font-size: 2rem;
   padding: 1rem;
   padding-left: 2rem;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(23, 24, 24, 0.459);
 }
 
@@ -429,6 +433,11 @@ Football stuff outside field
   border-radius: 50%;
   overflow: hidden;
 }
+
+.colorPicker:focus {
+  outline: none;
+}
+
 ::-webkit-color-swatch-wrapper {
   border-radius: 50%;
   box-sizing: border-box;
@@ -437,4 +446,24 @@ Football stuff outside field
 }
 ::-webkit-color-swatch {
   border-radius: 50%;
+}
+
+.styles--numbers {
+  position: absolute;
+  top: 10%;
+  height: 200px;
+  width: 200px;
+
+  left: 19.2%;
+}
+
+.colorPicker-Numbers {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.colorPicker-Numbers {
+  outline: none;
 }

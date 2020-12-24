@@ -148,3 +148,31 @@ shirtColor.addEventListener("input", function (e) {
   console.log(shirtColor.value);
   shirt.forEach((el) => (el.style.backgroundColor = shirtColor.value));
 });
+const numberColor = document.querySelector(".colorPicker-Numbers");
+numberColor.addEventListener("input", function (e) {
+  console.log(numberOnTheShirt.value);
+  numberOnTheShirt.forEach((el) => (el.style.color = numberColor.value));
+});
+
+//positions of the goals
+/*
+const field = document.querySelector(".field__img");
+console.log(field.width);
+console.log(field.height);
+
+allShirts.forEach((el) => {
+  console.log(el.offsetLeft);
+  if (el.offsetLeft < 400) {
+    console.log(el.offsetTop);
+    el.children[0].children[0].textContent = "CB";
+  }
+  if (el.offsetLeft < 400 && el.offsetTop < 100) {
+    console.log(el.offsetTop);
+    el.children[0].children[0].textContent = "LB";
+  }
+  if (el.offsetLeft < 400 && el.offsetTop > 500) {
+    console.log(el.offsetTop);
+    el.children[0].children[0].textContent = "RB";
+  }
+});
+*/
